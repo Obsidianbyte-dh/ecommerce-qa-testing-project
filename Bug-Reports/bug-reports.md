@@ -1,21 +1,38 @@
-# Bug Reports — E-commerce QA Project
+# Bug Reports – E-commerce Website QA Testing Project
 
-## Bug Report Template
+## 1. Project Information
 
-| Field | Description |
-|---|---|
-| Bug ID | Unique bug identifier |
-| Title | Short description of the issue |
-| Environment | Browser and device used |
-| Preconditions | Requirements before testing |
-| Steps to Reproduce | Steps to trigger the issue |
-| Expected Result | What should happen |
-| Actual Result | What actually happened |
-| Severity | Impact of the bug |
-| Status | Current bug status |
+- **Application:** SauceDemo (Swag Labs)
+- **Testing Type:** Manual Testing
+- **Module:** Login, Product Display, Cart and Checkout
+- **Browser:** Google Chrome
 
-## Bug Report Status
+## 2. Purpose
 
-No bugs have been officially reported yet.
+This document is maintained to record defects identified during manual testing.
 
-Bugs will be documented here only after they are reproduced during actual testing.
+A bug is documented only after the unexpected behaviour has been reproduced and verified.
+
+## 3. Bug Report Template
+
+Each identified bug will include:
+
+- Bug ID
+- Bug Title
+- Module
+- Environment
+- Preconditions
+- Steps to Reproduce
+- Expected Result
+- Actual Result
+- Severity
+- Priority
+- Status
+
+## 4. Bug Summary
+
+No confirmed bugs have been documented in the current testing cycle.
+
+## 5. Conclusion
+
+Bug reports will be added whenever a reproducible defect is identified during future testing activities.
