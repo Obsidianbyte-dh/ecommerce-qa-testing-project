@@ -172,10 +172,10 @@
 ## Testing Summary
 
 - Total Test Cases: 9
-- Executed: 1
-- Passed: 1
+- Executed: 9
+- Passed: 9
 - Failed: 0
-- Not Run: 8
+- Not Run: 0
 
 ## Project Status
 
