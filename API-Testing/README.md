@@ -1,35 +1,43 @@
-# API Testing — Postman
+# API Testing Project — Postman
 
 ## Overview
-This folder contains API testing work completed using Postman as part of my E-commerce QA Testing Project.
+This project demonstrates beginner-level API testing using Postman and automated JavaScript assertions.
 
 ## Tools Used
 - Postman
-- JSONPlaceholder Practice API
+- JavaScript
+- JSONPlaceholder REST API
+- GitHub
 
-## Testing Performed
+## API Testing Coverage
 
-### API001 — Get Single Post
-- HTTP Method: GET
-- Endpoint: `/posts/1`
-- Expected Status: 200 OK
-- Actual Status: 200 OK
-- Response fields validated: userId, id, title, body
-- Automated tests: 2 passed, 0 failed
+| API ID | Method | Test Scenario | Result |
+|---|---|---|---|
+| API001 | GET | Retrieve a post | PASS |
+| API002 | POST | Create a post | PASS |
+| API003 | PUT | Update a post | PASS |
+| API004 | DELETE | Delete a post | PASS |
+| API005 | GET | Invalid endpoint | PASS |
+| API006 | POST | Empty request body | PASS |
+| API007 | POST | Unexpected data types | PASS |
 
-## Files
-- `api-test-cases.md` — API test case documentation
-- `postman-tests.md` — Automated Postman test script
+## Skills Demonstrated
+- HTTP methods: GET, POST, PUT, DELETE
+- HTTP status codes
+- JSON request and response handling
+- Positive and negative API testing
+- Postman automated tests
+- JavaScript assertions
+- Test documentation
 
-## Learning Outcomes
-- Understanding API requests and responses
-- Working with HTTP GET requests
-- Understanding JSON responses
-- Validating HTTP status codes
-- Writing automated API tests using JavaScript in Postman
+## Important Observations
+JSONPlaceholder is a simulated REST API. Some requests with invalid or incomplete data were accepted. These behaviours were documented as observations rather than assumed production defects.
+
+## Project Status
+Completed beginner API testing practice.
 
 ## Future Scope
-- POST, PUT and DELETE requests
-- Negative API testing
-- API response validation
-- More automated test cases
+- Authentication testing
+- More advanced API validations
+- Playwright automation
+- SQL testing
