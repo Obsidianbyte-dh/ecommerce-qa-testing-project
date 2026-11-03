@@ -41,3 +41,7 @@ Completed beginner API testing practice.
 - More advanced API validations
 - Playwright automation
 - SQL testing
+
+  ## Postman Collection
+
+[View API Testing Collection] https://go.postman.co/workspace/462eb0fa-3d1b-469e-9a14-bf3ad9245fd0
