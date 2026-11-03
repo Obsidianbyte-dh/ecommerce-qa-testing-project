@@ -52,3 +52,28 @@ JSONPlaceholder simulates resource creation. The new post is not permanently sto
 
 ### Tool Used
 Postman
+
+---
+
+## API003 — Update an Existing Post
+
+- **Test Objective:** Verify that an existing post can be updated.
+- **HTTP Method:** PUT
+- **Endpoint:** `https://jsonplaceholder.typicode.com/posts/1`
+- **Request Body:** Updated title, body and userId.
+- **Expected Status Code:** 200 OK
+
+### Actual Result
+- Status code received: 200 OK
+- Updated title matched expected value.
+- Updated body matched expected value.
+- Automated validation: 3 tests passed.
+
+### Test Status
+PASS
+
+### Note
+JSONPlaceholder simulates updates. Changes are not permanently stored.
+
+### Tool Used
+Postman
