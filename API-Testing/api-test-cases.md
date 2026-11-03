@@ -26,3 +26,29 @@ PASS
 
 ### Tool Used
 Postman
+
+---
+
+## API002 — Create a New Post
+
+- **Test Objective:** Verify that the API accepts data through a POST request.
+- **HTTP Method:** POST
+- **Endpoint:** `https://jsonplaceholder.typicode.com/posts`
+- **Request Body:** JSON containing title, body and userId.
+- **Expected Status Code:** 201 Created
+
+### Actual Result
+- Status code received: 201 Created
+- Submitted title matched.
+- Submitted body matched.
+- Generated ID was present.
+- Automated validation: 3 tests passed.
+
+### Test Status
+PASS
+
+### Note
+JSONPlaceholder simulates resource creation. The new post is not permanently stored.
+
+### Tool Used
+Postman
