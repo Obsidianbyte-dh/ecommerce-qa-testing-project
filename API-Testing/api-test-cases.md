@@ -77,3 +77,26 @@ JSONPlaceholder simulates updates. Changes are not permanently stored.
 
 ### Tool Used
 Postman
+
+---
+
+## API004 — Delete an Existing Post
+
+- **Test Objective:** Verify that an existing post can be deleted.
+- **HTTP Method:** DELETE
+- **Endpoint:** `https://jsonplaceholder.typicode.com/posts/1`
+- **Expected Status Code:** 200 OK
+
+### Actual Result
+- Status code received: 200 OK
+- Response body: Empty JSON object (`{}`)
+- Automated validation: 2 tests passed.
+
+### Test Status
+PASS
+
+### Note
+JSONPlaceholder simulates deletion. The original resource is not permanently removed.
+
+### Tool Used
+Postman
