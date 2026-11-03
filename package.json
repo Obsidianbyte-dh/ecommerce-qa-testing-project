@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-qa-testing",
+  "version": "1.0.0",
+  "description": "E-commerce QA automation project using Playwright",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}
