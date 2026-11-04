@@ -1,35 +1,18 @@
-name: Playwright Tests
+const { defineConfig } = require('@playwright/test');
 
-on:
-  push:
-  workflow_dispatch:
+module.exports = defineConfig({
+  testDir: './tests',
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+  reporter: [
+    ['list'],
+    ['html', {
+      outputFolder: 'playwright-report',
+      open: 'never'
+    }]
+  ],
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-
-      - name: Run Playwright tests
-        run: npm test
-
-      - name: Upload HTML Test Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-html-report
-          path: playwright-report/
-          retention-days: 14
+  use: {
+    baseURL: 'https://www.saucedemo.com',
+    headless: true
+  }
+});
