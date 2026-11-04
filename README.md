@@ -1,112 +1,87 @@
-# E-Commerce QA Testing Project
+# E-Commerce Website QA Testing Project
 
-A beginner QA Engineering portfolio project focused on Manual Testing, API Testing, Browser Automation and Continuous Integration.
+A beginner QA portfolio project demonstrating manual testing, API testing, browser automation, and continuous integration using GitHub Actions.
 
 ## Project Overview
 
-This project demonstrates software testing practices using an e-commerce web application. It covers functional testing, negative testing, API validation, browser automation and automated test execution through GitHub Actions.
+This project focuses on testing the SauceDemo e-commerce application to evaluate its login, product browsing, shopping cart, and checkout functionalities.
 
-**Application Under Test:** [SauceDemo](https://www.saucedemo.com/)
+**Application under test:** https://www.saucedemo.com/
 
-## Tech Stack
+## Testing Summary
 
-| Tool | Purpose |
+| Testing Type | Coverage |
 |---|---|
-| Manual Testing | Functional and negative testing |
-| Postman | API Testing |
-| Playwright | Browser Automation |
-| JavaScript | Automation test scripts |
-| GitHub | Version Control |
-| GitHub Actions | CI/CD and automated execution |
-| Chromium | Browser testing |
+| Manual Testing | 16 test cases designed; first 8 executed |
+| API Testing | 7 Postman requests with assertions |
+| Automation Testing | 10 Playwright test cases |
+| CI/CD | GitHub Actions workflow |
+| Test Reporting | Playwright HTML report |
 
 ## Project Structure
 
-```text
-ecommerce-qa-testing-project/
-│
-├── Test-Plan/
-│   └── test-plan.md
-│
-├── Test-Cases/
-│   ├── login-test-cases.md
-│   └── product-cart-checkout.md
-│
-├── Bug-Reports/
-│   └── bug-reports.md
-│
-├── API-Testing/
-│   ├── README.md
-│   ├── api-test-cases.md
-│   └── postman-tests.md
-│
-├── tests/
-│   └── login.spec.js
-│
-├── .github/
-│   └── workflows/
-│       └── playwright.yml
-│
-├── package.json
-├── playwright.config.js
-└── README.md
-```
+- `Test-Plan/` – Test strategy and scope
+- `Test-Cases/` – Manual test scenarios
+- `Bug-Reports/` – Documented defects
+- `API-Testing/` – API test documentation
+- `tests/` – Playwright automation scripts
+- `.github/workflows/` – GitHub Actions configuration
 
-## 1. Manual Testing
+## Tools & Technologies
 
-Performed manual functional and negative testing on SauceDemo.
+- Manual Software Testing
+- Postman
+- Playwright
+- JavaScript
+- Node.js
+- GitHub
+- GitHub Actions
 
-**Testing Coverage:**
-- Login functionality
-- Invalid login credentials
-- Empty input fields
-- Product display
-- Product selection
-- Cart functionality
-- Checkout workflow
+## Automated Testing
 
-**Documentation:**
-- Test Plan
-- Login Test Cases
-- Product, Cart and Checkout Test Cases
-- Bug Reports
+The project contains 10 Playwright automated tests covering:
 
-A total of 16 manual test cases have been designed, with initial execution documented.
+- Valid and invalid login
+- Empty login fields
+- Adding and removing cart items
+- Checkout navigation
+- Checkout validation
+- Successful order completion
+- Logout functionality
 
-## 2. API Testing – Postman
+**Latest successful run: 10/10 tests passed.**
 
-Performed API testing using JSONPlaceholder, a simulated REST API.
+## API Testing
 
-**HTTP Methods Covered:**
+Used Postman with JSONPlaceholder to test:
+
 - GET
 - POST
 - PUT
 - DELETE
+- Invalid endpoint
+- Missing required data
+- Invalid data types
 
-**Testing Scenarios:**
-- Fetch a single post
-- Create a post
-- Update a post
-- Delete a post
-- Test invalid endpoints
-- Test missing required data
-- Test invalid data types
+All 7 configured assertions passed.
 
-**Total API Requests:** 7
+*Note: JSONPlaceholder is a simulated API. Write operations return simulated responses and do not persist changes.*
 
-**Result:** All 7 API test scripts passed their configured assertions.
+## HTML Test Report
 
-## 3. Browser Automation – Playwright
+Playwright generates an HTML report after automated test execution.
 
-Implemented browser automation using Playwright with JavaScript.
+The report is uploaded as a GitHub Actions workflow artifact named `playwright-html-report`.
 
-**Automated Test Cases:**
+To access it:
+1. Open the repository's Actions tab.
+2. Select the latest successful workflow run.
+3. Download the `playwright-html-report` artifact.
+4. Extract it and open `index.html`.
 
-| Test ID | Test Scenario |
-|---|---|
-| PW001 | Valid Login |
-| PW002 | Invalid Password |
-| PW003 | Empty Username |
-| PW004 | Add Product to Cart |
-| PW005 | Remove Product from Cart |
-| PW006 |
+## Running the Tests Locally
+
+Install dependencies:
+
+```bash
+npm install
