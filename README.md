@@ -51,6 +51,15 @@ The project contains 10 Playwright automated tests covering:
 
 **Latest successful run: 10/10 tests passed.**
 
+### Test Execution Evidence
+
+**Playwright Test Results – Screenshot 1**
+
+![Playwright Results 1](screenshots/Screenshot%202026-11-04%20173702.png)
+
+**Playwright Test Results – Screenshot 2**
+
+![Playwright Results 2](screenshots/Screenshot%202026-11-04%20173716.png)
 ## API Testing
 
 Used Postman with JSONPlaceholder to test:
