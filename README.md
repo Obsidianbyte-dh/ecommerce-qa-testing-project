@@ -72,6 +72,17 @@ Used Postman with JSONPlaceholder to test:
 - Missing required data
 - Invalid data types
 
+  
+### API Testing Evidence
+
+**Postman Collection – 7 API Requests**
+
+![Postman Collection](screenshots/Screenshot%202026-11-04%20175618.png)
+
+**Postman Test Results – Passing Assertions**
+
+![Postman Test Results](screenshots/Screenshot%202026-11-04%20175639.png)
+
 All 7 configured assertions passed.
 
 *Note: JSONPlaceholder is a simulated API. Write operations return simulated responses and do not persist changes.*
