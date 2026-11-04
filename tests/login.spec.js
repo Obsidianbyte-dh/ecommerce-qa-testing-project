@@ -73,3 +73,21 @@ test('PW008 - Checkout with valid details', async ({ page }) => {
 
   await expect(page).toHaveURL(/checkout-step-two/);
 });
+
+test('PW009 - Complete an order successfully', async ({ page }) => {
+  await login(page);
+
+  await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+  await page.locator('.shopping_cart_link').click();
+  await page.locator('[data-test="checkout"]').click();
+
+  await page.locator('[data-test="firstName"]').fill('QA');
+  await page.locator('[data-test="lastName"]').fill('Tester');
+  await page.locator('[data-test="postalCode"]').fill('490001');
+  await page.locator('[data-test="continue"]').click();
+
+  await page.locator('[data-test="finish"]').click();
+
+  await expect(page.locator('.complete-header'))
+    .toHaveText('Thank you for your order!');
+});
