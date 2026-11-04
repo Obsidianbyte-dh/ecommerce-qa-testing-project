@@ -42,6 +42,27 @@ Completed beginner API testing practice.
 - Playwright automation
 - SQL testing
 
+## Playwright Automation Testing
+
+**Tool:** Playwright  
+**Language:** JavaScript  
+**Execution:** GitHub Actions  
+**Browser:** Chromium  
+
+### Automated Test Cases
+
+| Test Case | Description | Status |
+|---|---|---|
+| PW001 | Valid Login | PASS |
+| PW002 | Invalid Password | PASS |
+| PW003 | Empty Username | PASS |
+| PW004 | Add Product to Cart | PASS |
+
+**Total Tests:** 4  
+**Passed:** 4  
+**Failed:** 0  
+
+Tests are executed automatically through GitHub Actions.
   ## Postman Collection
 
 [View API Testing Collection] https://go.postman.co/workspace/462eb0fa-3d1b-469e-9a14-bf3ad9245fd0
