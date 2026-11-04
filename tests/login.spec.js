@@ -49,3 +49,27 @@ test('PW006 - Navigate to checkout', async ({ page }) => {
   await page.locator('[data-test="checkout"]').click();
   await expect(page).toHaveURL(/checkout-step-one/);
 });
+
+test('PW007 - Checkout with empty details', async ({ page }) => {
+  await login(page);
+  await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+  await page.locator('.shopping_cart_link').click();
+  await page.locator('[data-test="checkout"]').click();
+  await page.locator('[data-test="continue"]').click();
+
+  await expect(page.locator('[data-test="error"]')).toBeVisible();
+});
+
+test('PW008 - Checkout with valid details', async ({ page }) => {
+  await login(page);
+  await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+  await page.locator('.shopping_cart_link').click();
+  await page.locator('[data-test="checkout"]').click();
+
+  await page.locator('[data-test="firstName"]').fill('QA');
+  await page.locator('[data-test="lastName"]').fill('Tester');
+  await page.locator('[data-test="postalCode"]').fill('490001');
+  await page.locator('[data-test="continue"]').click();
+
+  await expect(page).toHaveURL(/checkout-step-two/);
+});
