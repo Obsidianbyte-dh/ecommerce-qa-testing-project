@@ -91,3 +91,12 @@ test('PW009 - Complete an order successfully', async ({ page }) => {
   await expect(page.locator('.complete-header'))
     .toHaveText('Thank you for your order!');
 });
+test('PW010 - User can log out successfully', async ({ page }) => {
+  await login(page);
+
+  await page.locator('#react-burger-menu-btn').click();
+  await page.locator('#logout_sidebar_link').click();
+
+  await expect(page).toHaveURL('/');
+  await expect(page.locator('[data-test="login-button"]')).toBeVisible();
+});
