@@ -102,7 +102,7 @@ To access it:
 
 Playwright generates a detailed HTML report after every automated test run.
 
-![Playwright HTML Report](screenshots/playwright-html-report.png)
+![Playwright HTML Report](screenshots/Screenshot 2026-11-04 180330.png)
 
 ### Accessing the Full Report
 
