@@ -98,6 +98,21 @@ To access it:
 2. Select the latest successful workflow run.
 3. Download the `playwright-html-report` artifact.
 4. Extract it and open `index.html`.
+   ## HTML Test Report
+
+Playwright generates a detailed HTML report after every automated test run.
+
+![Playwright HTML Report](screenshots/playwright-html-report.png)
+
+### Accessing the Full Report
+
+1. Open the repository's Actions tab.
+2. Select the latest successful workflow run.
+3. Download the `playwright-html-report` artifact.
+4. Extract the ZIP file.
+5. Open `index.html` in a browser.
+
+The report contains detailed execution results for all 10 automated tests.
 
 ## Running the Tests Locally
 
